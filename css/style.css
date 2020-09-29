@@ -45,11 +45,12 @@ nav{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
+
     background-color: #FFFFFF;
 }
 nav ul{
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -135,20 +136,27 @@ nav a:hover{
  }
 
  /* Contact Page */
+ .content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .contact-text {
+     margin-right: 10px;
+ }
  .location {
+    flex-grow: 1;
     display: flex;
-    flex: 1 1 300px;
-    align-items: center; 
-    justify-content: center; 
     flex-direction: column;
  }
 .map {
     border: 0;
-    width: 100%;
+    min-height: 200px;
     flex-grow: 1;
 }
 aside {
+    width: 200px;
     text-align: center;
+    flex-grow: 0;
 }
 .fa {  
     padding: 20px;  
