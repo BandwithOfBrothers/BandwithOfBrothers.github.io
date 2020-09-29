@@ -1,46 +1,141 @@
-<!doctype html>
+<!-- Gemaakt door Dean de Vries -->
+<!DOCTYPE html>
 <html lang="nl" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>Contact - Biker</title>
-    <link rel="stylesheet" href= "css/styles.css"> 
-</head>
-<body>
-    <!-- Navigatie -->
+    <head>
+        <meta charset="utf-8">
+        <title>Biker - Welkom</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body id="frontpage">
+        <section class="box topbar">
+            <p>Vandaag gereserveerd? Morgen in op te halen! Advies nodig? Bel 070-12345678910</p>
+        </section> 
+
+    <!-- Navigation bar-->
     <nav>
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="vestigingen.html" class="nav-item">Vestigingen</a>
-        <a href="reserveren.html" class="nav-item active">Reserveren</a>
-        <a href="about.html" class="nav-item">Over ons</a>
-        <a href="contact.html" class="nav-item">Contact</a>
+        <ul>
+            <li>
+                <a href="index.html" class="nav-item active">Home</a>
+            </li>
+
+            <li>
+                <a href="reserveren.html" class="nav-item">Reserveren</a>
+            </li>
+
+            <li>
+                <a href="about.html" class="nav-item">Over ons</a>
+            </li>
+
+            <li>
+                <a href="vestigingen.html" class="nav-item">Vestigingen</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </li>
+        </ul>
     </nav>
 
-    <main>
-        <header>
-            <!-- Logo -->
-            <picture class="logo"> 
-                <img src="./images/logo.svg" alt="Een deftige man op een penny farthing fiets." width="100px" height="150px">
-            </picture>
-            <!-- Responsive banner -->
-            <picture class="banner">
-                <source media="(min-width:650px)" srcset="./images/banner.jpg">
-                <source media="(min-width:465px)" srcset="./images/banner-medium.jpg">
-                <img src="./images/banner-small.jpg" alt="Meerdere gele fietsen met rode fietsbellen">
-            </picture>
-        </header>
-        
-        <article>
-            <h1>Welkom!</h1>
-            <p>Welkom op de ontvangspagina van Biker.</p>
-            <p>Huur bij ons blablablabla</p>
-        </article>
-
-        <!-- Footer met Social Media links -->
+    <section class="banner">    </section>
+<!-- Main content on the page-->
+        <main>
+            <section class="welkom-box">
+                <article class="welkom-text">
+                    <h3>
+                        Fietsverhuur
+                    </h3>
+                    <p>
+                        Ons land is een echt fietsland. Er zijn zo veel onontdekte fietspaden te vinden, en zoveel verschillende fietsverhuurbedrijven en fietsenwinkels, dat het huren van een fiets bijna altijd en overal kan. Juist omdat er zo veel verschillende verhuurlocaties zijn, kan het ingewikkeld zijn het juiste verhuurbedrijf voor jou eruit te pikken. Het ene verhuurbedrijf heeft weer niet wat het andere juist wel biedt, en het ene verhuurbedrijf heeft wel die aantrekkelijke korting, terwijl het andere bedrijf die ene fiets heeft die jij graag wilt huren. Wij weten hoe ingewikkeld het kan zijn het juiste verhuurbedrijf voor het huren van een fiets te vinden, en daarom willen wij je graag een handje helpen. We hebben de fietsverhuurbedrijven op een rijtje gezet, zodat je makkelijk kunt zoeken naar de fietsverhuur die bij jou past, waar je ook bent.                
+                    </p>
+                </article>
+                <div class="welkom-buttons">
+                    <a class="button" href="#">Nu reserveren</a>
+                    <a class="button" href="#">Contact</a>
+                </div>
+            </section>
+        </main>
+ <!-- Footer -->
         <footer>
-            <a href="https://www.twitter.com/biker">Twitter</a>
-            <a href="https://www.facebook.com/biker">Facebook</a>
-            <a href="https://www.instagram.com/biker">Instagram</a>
+            <section class="footer-top">
+                <section class="col-4 footer-1">
+                    <h3>Biker:</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="">Home</a>
+                        <li>
+                            <a href="reserveren.html">Reserveren</a>
+                        </li>
+            
+                        <li>
+                            <a href="about.html">Over ons</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-4 footer-2">
+                    <h3>Biker:</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="">Home</a>
+                        <li>
+                            <a href="reserveren.html" class="">Reserveren</a>
+                        </li>
+            
+                        <li>
+                            <a href="about.html" class="">Over ons</a>
+                        </li>
+                    </ul>
+                    <!-- <table>
+                        <tr>
+                            <td>Maandag:</td>
+                            <td><time datetime="08:00">08:00</time> - <time datetime="12:00">12:00</time></td>
+                        </tr>
+                        <tr>
+                            <td>Dinsdag:</td>
+                            <td><time datetime="08:00">08:00</time> - <time datetime="12:00">12:00</time></td>
+                        </tr>
+                        <tr>
+                            <td>Woensdag:</td>
+                            <td><time datetime="08:00">08:00</time> - <time datetime="12:00">12:00</time></td>                    </tr>
+                        <tr>
+                            <td>Donderdag:</td>
+                            <td><time datetime="08:00">08:00</time> - <time datetime="12:00">12:00</time></td>                    </tr>
+                        <tr>
+                            <td>Vrijdag:</td>
+                            <td><time datetime="08:00">08:00</time> - <time datetime="12:00">12:00</time></td>                    </tr>
+                        <tr>
+                            <td>Zaterdag:</td>
+                            <td><time datetime="08:00">08:00</time> - <time datetime="12:00">12:00</time></td>                    </tr>
+                        <tr>
+                            <td>Zondag:</td>
+                            <td><time datetime="08:00">08:00</time> - <time datetime="12:00">12:00</time></td>                    </tr>
+                    </table> -->
+                </section>
+
+                <section class="col-4 footer-3">
+                    <h3>Vestigingen:</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="">Den Haag</a>
+                        <li>
+                            <a href="reserveren.html" class="">Zoetermeer</a>
+                        </li>
+            
+                        <li>
+                            <a href="about.html" class="">Rijswijk</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-4 footer-4">
+                </section>
+
+            </section>
+
+            <section class="footer-bottom">
+                <p class="copyright font2">Made by <span class="company-name">Bandwith of Brothers</span> | Dean de Vries</p>
+            </section>
         </footer>
-    </main>
-</body>
-</html>        
+    </body>
+</html>
